@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>صفحه ورود</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    <!--arbabs test project-->
+      <div class="container">
+         <form id="login-form">
+            <h1>ورود</h1>
+            <div class="form-group">
+               <label for="username">نام کاربری</label>
+               <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+               <label for="password">رمز عبور</label>
+               <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+               <button type="submit" id="login-button">ورود</button>
+               <button type="button" id="register-button">ثبت نام</button>
+               <button type="button" id="forgot-password-button">فراموشی رمز عبور</button>
+            </div>
+         </form>
+
+         <form id="register-form" style="display: none;">
+            <h1>ثبت نام</h1>
+            <div class="form-group">
+               <label for="new-username">نام کاربری جدید</label>
+               <input type="text" id="new-username" name="new-username" required>
+            </div>
+            <div class="form-group">
+               <label for="new-password">رمز عبور جدید</label>
+               <input type="password" id="new-password" name="new-password" required>
+            </div>
+            <div class="form-group">
+               <button type="submit" id="register-submit-button">ثبت نام</button>
+               <button type="button" class="back-to-login-button">بازگشت به ورود</button>
+            </div>
+         </form>
+
+         <form id="forgot-password-form" style="display: none;">
+            <h1>فراموشی رمز عبور</h1>
+            <div class="form-group">
+               <label for="forgot-username">نام کاربری</label>
+               <input type="text" id="forgot-username" name="forgot-username" required>
+            </div>
+            <div class="form-group">
+               <button type="submit" id="forgot-password-submit-button">فرستادن لینک بازیابی</button>
+               <button type="button" class="back-to-login-button">بازگشت به ورود</button>
+            </div>
+         </form>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="index.js"></script>
+   </body>
+</html>
